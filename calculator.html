@@ -9,14 +9,15 @@
 <title>calculator</title>
 <script type ="text/javascript">
 function square() {
-var num = document.getElementById("n1);
-num.value = num.value * num.value;
+var num = document.getElementById("n1");
+num.value = Math.pow(num.value,2);
 }
 </script>
 </head>
 <body>
+<h1>Emilio Fdez. A.</h1>
 <p><strong>Number:</strong></p>
-<p><imput type="text" id="n1"></p>
+<p><input type="text" id="n1"></p>
 <button onclick="square()">x<sup>2</sup></button>
 </body>
 </html>
