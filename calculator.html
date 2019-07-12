@@ -1,22 +1,39 @@
 
 
-
-
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="utf-8"/>
 <title>calculator</title>
 <script type ="text/javascript">
-function square() {
-var num = document.getElementById("n1);
-num.value = num.value * num.value;
+
+function square() 
+{
+var num = document.getElementById("n1");
+num.value = Math.pow(num.value,2);
+document.getElementById("res").innerHTML=num.value;
+}
+function inverse()
+{
+  var num = document.getElementById("n1");
+  num.value = 1/num.value;
+  document.getElementById("res").innerHTML=num.value;
 }
 </script>
 </head>
 <body>
+<h1> Autor: Emilio Fdez. A.</h1>
 <p><strong>Number:</strong></p>
-<p><imput type="text" id="n1"></p>
+ <p><input type="text" id="n1"></p>
+<p>
+<button onclick="inverse()"> 1/x </button>
 <button onclick="square()">x<sup>2</sup></button>
+</p>
+
+<p>
+<h2>El resustado es:</h2>
+</p>
+<div id="res"></div>
+
 </body>
 </html>

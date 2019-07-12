@@ -1,3 +1,7 @@
+
+# cal
+Educational Git project. Creates a simple calculator in HTML and JavaScript in short steps. 
+=======
 # Entrega mooc_node-mod10_quiz_mvc_server
 
 Puede descargar este programa
